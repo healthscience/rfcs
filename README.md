@@ -1,23 +1,22 @@
-# Rust RFCs
-[Rust RFCs]: #rust-rfcs
+# HealthScience RFCs
+[Rust RFCs]: #healthscience-rfcs
 
 Many changes, including bug fixes and documentation improvements can be
 implemented and reviewed via the normal GitHub pull request workflow.
 
 Some changes though are "substantial", and we ask that these be put through a
-bit of a design process and produce a consensus among the Rust community and
+bit of a design process and produce a consensus among the HealthScience community and
 the [sub-team]s.
 
 The "RFC" (request for comments) process is intended to provide a consistent
-and controlled path for new features to enter the language and standard
-libraries, so that all stakeholders can be confident about the direction the
-language is evolving in.
+and controlled path for new features to enter the network or sub-projects, so that all stakeholders can be confident about the direction the
+network is evolving in.
 
 
 ## Table of Contents
 [Table of Contents]: #table-of-contents
 
-  - [Opening](#rust-rfcs)
+  - [Opening](#healthscience-rfcs)
   - [Table of Contents]
   - [When you need to follow this process]
   - [Before creating an RFC]
@@ -34,26 +33,22 @@ language is evolving in.
 [When you need to follow this process]: #when-you-need-to-follow-this-process
 
 You need to follow this process if you intend to make "substantial" changes to
-Rust, Cargo, Crates.io, or the RFC process itself. What constitutes a
+healthscience protocol or any of its sub-projects, PtoP Network, DML, ResolutionHealth or Simulations, or the RFC process itself. What constitutes a
 "substantial" change is evolving based on community norms and varies depending
 on what part of the ecosystem you are proposing to change, but may include the
 following.
 
-  - Any semantic or syntactic change to the language that is not a bugfix.
-  - Removing language features, including those that are feature-gated.
+  - Changes to architecture or components of the network.
+  - Changes to any of the sub-projects core thinking or technical implementation.
   - Changes to the interface between the compiler and libraries, including lang
     items and intrinsics.
-  - Additions to `std`.
+  - Additions to network.
 
 Some changes do not require an RFC:
 
-  - Rephrasing, reorganizing, refactoring, or otherwise "changing shape does
-    not change meaning".
-  - Additions that strictly improve objective, numerical quality criteria
-    (warning removal, speedup, better platform coverage, more parallelism, trap
-    more errors, etc.)
-  - Additions only likely to be _noticed by_ other developers-of-rust,
-    invisible to users-of-rust.
+  - .
+  - .
+  - .
 
 If you submit a pull request to implement a new feature without going through
 the RFC process, it may be closed with a polite request to submit an RFC first.
@@ -63,11 +58,12 @@ the RFC process, it may be closed with a polite request to submit an RFC first.
 [Sub-team specific guidelines]: #sub-team-specific-guidelines
 
 For more details on when an RFC is required for the following areas, please see
-the Rust community's [sub-team] specific guidelines for:
+the HealthScience.network community's [sub-team] specific guidelines for:
 
-  - [language changes](lang_changes.md),
-  - [library changes](libs_changes.md),
-  - [compiler changes](compiler_changes.md).
+  - [Data/Sensors changes](datasensors_changes.md),
+  - [DML changes](dml_changes.md),
+  - [ResolutionHealth changes](resolutionhealth_changes.md).
+  - [Simulations changes](simulations_changes.md).
 
 
 ## Before creating an RFC
@@ -85,7 +81,7 @@ beforehand, to ascertain that the RFC may be desirable; having a consistent
 impact on the project requires concerted effort toward consensus-building.
 
 The most common preparations for writing and submitting an RFC include talking
-the idea over on #rust-internals, discussing the topic on our [developer discussion forum],
+the idea over on #healthscience-internals, discussing the topic on our [developer discussion forum],
 and occasionally posting "pre-RFCs" on the developer forum. You may file issues
 on this repo for discussion, but these are not actively looked at by the teams.
 
@@ -147,7 +143,7 @@ merged into the RFC repository as a markdown file. At that point the RFC is
     in full depth.
   - The FCP lasts ten calendar days, so that it is open for at least 5 business
     days. It is also advertised widely,
-    e.g. in [This Week in Rust](https://this-week-in-rust.org/). This way all
+    e.g. in [This Week in HealthScience](https://forum.healthscience.network/). This way all
     stakeholders have a chance to lodge any final objections before a decision
     is reached.
   - In most cases, the FCP period is quiet, and the RFC is either merged or
@@ -246,10 +242,10 @@ circumstances. As usual, we are trying to let the process be driven by
 consensus and community norms, not impose more structure than necessary.
 
 
-[developer discussion forum]: http://internals.rust-lang.org/
-[RFC issue tracker]: https://github.com/rust-lang/rfcs/issues
-[RFC repository]: http://github.com/rust-lang/rfcs
-[sub-team]: http://www.rust-lang.org/team.html
+[developer discussion forum]: http://
+[RFC issue tracker]: https://github.com/healthscience/rfcs/issues
+[RFC repository]: http://github.com/healthscience/rfcs
+[sub-team]: http
 
 ## License
 [License]: #license
@@ -259,7 +255,7 @@ This repository is currently in the process of being licensed under either of
 * Apache License, Version 2.0, ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
 * MIT license ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
 
-at your option. Some parts of the repository are already licensed according to those terms. For more see [RFC 2044](https://github.com/rust-lang/rfcs/pull/2044) and its [tracking issue](https://github.com/rust-lang/rust/issues/43461).
+at your option. Some parts of the repository are already licensed according to those terms. 
 
 ### Contributions
 
