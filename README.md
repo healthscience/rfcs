@@ -9,8 +9,7 @@ bit of a design process and produce a consensus among the HealthScience communit
 the [sub-team]s.
 
 The "RFC" (request for comments) process is intended to provide a consistent
-and controlled path for new features to enter the network or sub-projects, so that all stakeholders can be confident about the direction the
-network is evolving in.
+and controlled path for new features to enter the network or sub-projects, so that all stakeholders can be confident about the direction the network is evolving in.
 
 
 ## Table of Contents
@@ -33,15 +32,14 @@ network is evolving in.
 [When you need to follow this process]: #when-you-need-to-follow-this-process
 
 You need to follow this process if you intend to make "substantial" changes to
-healthscience protocol or any of its sub-projects, PtoP Network, DML, ResolutionHealth or Simulations, or the RFC process itself. What constitutes a
+healthscience protocol or any of its sub-projects, Devices/mobile, PtoP Network, DML, ResolutionHealth/Simulations, or the RFC process itself. What constitutes a
 "substantial" change is evolving based on community norms and varies depending
 on what part of the ecosystem you are proposing to change, but may include the
 following.
 
-  - Changes to architecture or components of the network.
+  - Changes to architecture or selected components of the network.
   - Changes to any of the sub-projects core thinking or technical implementation.
-  - Changes to the interface between the compiler and libraries, including lang
-    items and intrinsics.
+  - Changes to the interface between the core components of the network.
   - Additions to network.
 
 Some changes do not require an RFC:
@@ -60,11 +58,10 @@ the RFC process, it may be closed with a polite request to submit an RFC first.
 For more details on when an RFC is required for the following areas, please see
 the HealthScience.network community's [sub-team] specific guidelines for:
 
-  - [Data/Sensors changes](datasensors_changes.md),
-  - [DML changes](dml_changes.md),
-  - [ResolutionHealth changes](resolutionhealth_changes.md).
-  - [Simulations changes](simulations_changes.md).
-
+  - [Devices/mobile changes](device-mobile_changes.md).
+  - [PtoPnetwork changes](ptopnetwork_changes.md),
+  - [DMLflow changes](dml-flow_changes.md),
+  - [ResolutionHealth/simulations changes](resolution-simulations_changes.md).
 
 ## Before creating an RFC
 [Before creating an RFC]: #before-creating-an-rfc
@@ -93,9 +90,9 @@ indication that the RFC is worth pursuing.
 ## What the process is
 [What the process is]: #what-the-process-is
 
-In short, to get a major feature added to Rust, one must first get the RFC
+In short, to get a major feature added to the HealthScience.network, one must first get the RFC
 merged into the RFC repository as a markdown file. At that point the RFC is
-"active" and may be implemented with the goal of eventual inclusion into Rust.
+"active" and may be implemented with the goal of eventual inclusion into the network.
 
   - Fork the RFC repo [RFC repository]
   - Copy `0000-template.md` to `text/0000-my-feature.md` (where "my-feature" is
@@ -154,14 +151,14 @@ merged into the RFC repository as a markdown file. At that point the RFC is
 [The RFC life-cycle]: #the-rfc-life-cycle
 
 Once an RFC becomes "active" then authors may implement it and submit the
-feature as a pull request to the Rust repo. Being "active" is not a rubber
+feature as a pull request to the HealthScience repo. Being "active" is not a rubber
 stamp, and in particular still does not mean the feature will ultimately be
 merged; it does mean that in principle all the major stakeholders have agreed
 to the feature and are amenable to merging it.
 
 Furthermore, the fact that a given RFC has been accepted and is "active"
 implies nothing about what priority is assigned to its implementation, nor does
-it imply anything about whether a Rust developer has been assigned the task of
+it imply anything about whether a community developer has been assigned the task of
 implementing the feature. While it is not *necessary* that the author of the
 RFC also write the implementation, it is by far the most effective way to see
 an RFC through to completion: authors should not expect that other project
@@ -204,7 +201,7 @@ away. Other accepted RFCs can represent features that can wait until some
 arbitrary developer feels like doing the work. Every accepted RFC has an
 associated issue tracking its implementation in the Rust repository; thus that
 associated issue can be assigned a priority via the triage process that the
-team uses for all issues in the Rust repository.
+team uses for all issues in the HealthScience repository.
 
 The author of an RFC is not obligated to implement it. Of course, the RFC
 author (like any other developer) is welcome to post an implementation for
@@ -242,10 +239,10 @@ circumstances. As usual, we are trying to let the process be driven by
 consensus and community norms, not impose more structure than necessary.
 
 
-[developer discussion forum]: http://
+[developer discussion forum]: http://forum.healthscience.network
 [RFC issue tracker]: https://github.com/healthscience/rfcs/issues
 [RFC repository]: http://github.com/healthscience/rfcs
-[sub-team]: http
+[sub-team]: http://www.healthscience.network
 
 ## License
 [License]: #license
@@ -255,7 +252,7 @@ This repository is currently in the process of being licensed under either of
 * Apache License, Version 2.0, ([LICENSE-APACHE](LICENSE-APACHE) or http://www.apache.org/licenses/LICENSE-2.0)
 * MIT license ([LICENSE-MIT](LICENSE-MIT) or http://opensource.org/licenses/MIT)
 
-at your option. Some parts of the repository are already licensed according to those terms. 
+at your option. Some parts of the repository are already licensed according to those terms.
 
 ### Contributions
 
